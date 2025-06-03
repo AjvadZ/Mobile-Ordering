@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Smythe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+   
+    margin: 0;
+    font-family: "Smythe", system-ui;
+    font-size: 20px;
+    letter-spacing: 1;
+} 
+main{
+    width: 600px;
+    height: 1160px;
+    margin: 0 auto;
+    overflow: auto; 
+}
+.order-summary-section, footer {
+    font-size: 28px;
+}
+.hero {
+    position: relative;
+    width: 100%;
+    height: 165px;
+}
+
+.header-image {
+    width: 100%;
+    height: 165px;
+    object-fit: cover;
+    display: block;
+}
+
+.title, .sub-title {
+    position: absolute;
+    left: 45px;
+    color: white;
+}
+
+.title {
+    top: 45px;
+}
+
+.sub-title {
+    top: 110px;
+}
+.item, .menu-item {
+    margin: 65px 45px 45px 45px;
+    display: flex;
+    width: calc(100% - 90px);
+    position: relative;
+}
+.item-list, .menu-item-details, h3, p, p {
+    padding-bottom: 8px;
+}
+.price, .menu-item-price {
+    font-weight: bold;
+}
+
+.item-img, .menu-item-emoji {
+    font-size: 70px;
+    line-height: 80px;
+    margin-right: 30px;
+}
+
+.item-list, .menu-item-details {
+    flex-grow: 1;
+}
+
+.main-hr, .menu-item-divider {
+    border: none;         
+    border-top: 2px solid #ccc;
+    width: 100%;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+.add, .menu-item-add-btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%; 
+    border: 1.5px solid #ccc;
+    background: none; 
+    color: #333; 
+    font-family:  "Inter", sans-serif;;
+    line-height: 24px;
+    font-size: 32px; 
+    font-weight: 200; 
+    cursor: pointer;
+
+  /* For centering the text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.order-summary, .order-summary-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 45px;
+    margin-right: 45px;
+    width: calc(100% - 90px);
+
+}
+.item-name, .order-item-name-row {
+    display: flex;
+    gap: 20px;
+
+}
+.remove-btn, .order-remove-btn {
+    background: none;
+    border: none;
+    color: rgba(187, 187, 187, 1);
+}
+.your-order, .order-title {
+    text-align: center;
+    margin-bottom: 65px;
+    
+}
+.order-item-details, .order-item-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+}
+.confirm, .order-confirm-section {
+    display: flex;
+    flex-direction: column;
+     margin-left: 45px;
+    margin-right: 45px;
+    width: calc(100% - 90px);
+}
+.total, .order-total-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+hr{
+    border: none;         
+    border-top: 2px solid #ccc;
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+.complete-order, .order-complete-btn {
+    display: block;
+    background-color: rgba(22, 219, 153, 1);
+    width: 100%;
+    height: 60px;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 100px;
+}
+form {
+    width: 525px;
+    height: 500px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1.5px solid rgba(117, 117, 117, 1);
+    background-color: rgba(255, 255, 255, 1);
+    margin: auto;
+    box-shadow: 0 5px 255px rgba(0, 0, 0, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.payment-form-heading{
+    text-align: center;
+    margin: 45px auto 60px auto;
+}
+input {
+    width: 475px;
+    height: 50px;
+    margin: 0 25px 25px 25px;
+    border: 1.3px solid rgba(117, 117, 117, 1);
+    border-radius: 4px;
+    padding: 15px;
+}
+button[type=submit]{
+    background-color: rgba(22, 219, 153, 1);
+    width: 475px;
+    height: 70px;
+    border-radius: 4px;
+    margin: 25px 25px 0px 25px;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+.order-placed-msg {
+    width: 500px;
+    height: 120px;
+    border-radius: 3px;
+    background-color: rgba(236, 253, 245, 1);
+    color: rgba(6, 95, 70, 1);
+    margin: 20px auto 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+
+}
